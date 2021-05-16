@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TDT</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"
+    />
+    <style>
+      .facebook {
+        background-color: #3b5998 !important;
+        color: #fff !important;
+      }
+      .google {
+        background-color: #dd4b39 !important;
+      }
+    </style>
+  </head>
+  <body class="bodyLogin">
+    <nav class="light-blue lighten-1" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Authentication</a>
+      </div>
+    </nav>
+    <div class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <br /><br />
+        <div class="row center">
+          <div class="col s6 offset-s3">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title">Login using Node and Passport</span>
+              </div>
+              <div class="card-action">
+                <form class="login-form" action="login" method="post">
+                  <div class="row"></div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">account_circle</i>
+                      <input
+                        class="validate"
+                        id="username"
+                        name="email"
+                        type="text"
+                        placeholder="UserName"
+                      />
+                      <label
+                        for="authId"
+                        data-error="wrong"
+                        data-success="right"
+                      ></label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">lock_outline</i>
+                      <input
+                        id="password"
+                        name="password"
+                        type="password"
+                        placeholder="Password"
+                      />
+                      <label for="password"></label>
+                    </div>
+                  </div>
+
+                 
+
+                    <div class="form-group col-lg-12" >
+
+                      <% if(typeof error !="undefined"&&error.length > 0){ %>
+
+                        <div class="alert alert-danger" role="alert">
+                              <%= error %>
+                        </div>
+        
+                      <% } %>
+
+                        
+                      <% if(messages!=null&&messages.success){ %>
+
+                          <div class="alert alert-success" role="alert">
+                         
+                                <%= messages.success %>
+                          </div>
+                      <% } %>
+
+                      <% if(messages.inform){ %>
+
+                        <div class="alert alert-danger " role="alert">
+                       
+                              <%= messages.inform %>
+                        </div>
+        
+                      <% } %>
+
+                    </div>
+
+
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <button class="btn waves-effect waves-light col s12">
+                        Login
+                      </button>
+                    </div>
+                  </div>
+     
+                </form>
+                <a
+                  href="/auth/facebook"
+                  class="waves-effect waves-light btn social facebook"
+                >
+                  <i class="fa fa-facebook"></i>
+                </a>
+
+                <a
+                  href="/auth/google"
+                  class="waves-effect waves-light btn social google"
+                >
+                  <i class="fa fa-google" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

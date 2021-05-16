@@ -1,0 +1,142 @@
+.bodyLogin {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+  
+.facebook {
+    color: #00B7FF;
+  }
+  
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bodyDash {
+  background-color: #efefef !important;
+}
+
+.jsjhr .skfjh {
+  position: relative;
+  top: 4rem;
+}
+.jsjhr .skfjh .sfjhe {
+  background-color: #fff;
+  padding: 12px;
+  box-shadow: 0px 0px 6px #ccc;
+  height: 100%;
+}
+.jsjhr .skfjh .sfjhe .sjfsj img {
+  width: 140px;
+  margin-top: 9px;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+.jsjhr .skfjh .sfjhe h5 {
+  font-size: 16px;
+}
+.jsjhr .skfjh .jfheuf {
+  background-color: #fff;
+  box-shadow: 0px 0px 6px #ccc;
+  padding: 34px;
+}
+.jsjhr .skfjh .jfheuf textarea {
+  border: navajowhite;
+  border-bottom: 1px solid #efefef;
+  outline: navajowhite;
+}
+.jsjhr .skfjh .box1 {
+  background-color: #fff;
+  box-shadow: 0px 0px 6px #ccc;
+  padding: 20px;
+  margin-top: 20px;
+}
+.jsjhr .skfjh .box1 .skfjkk .lkt40 img {
+  width: 33px;
+  border-radius: 50%;
+  height: 33px;
+}
+.jsjhr .skfjh .left_box {
+  background-color: #fff;
+  box-shadow: 0px 0px 6px #ccc;
+  padding: 34px;
+}
+.jsjhr .skfjh .left_box .dfkj .lkt40 img {
+  width: 30px;
+  border-radius: 50%;
+  height: 30px;
+  margin-right: 10px;
+}
+
+
+.fa-sign-out:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+.group {
+  text-decoration: none;
+  color: black;
+}
+
+.homeIcon{
+  text-decoration: none;
+  color: black;
+}
+
+.error{
+  display: none;
+}
+
+.icon{
+  text-decoration: none;
+  color: #000;
+}
+
+.avatar{
+  width: 40px; 
+  height: 40px;
+}
+.iconLogout{
+  color: black; 
+  text-decoration: none
+}
+
+.inform-color{
+  background-color: #efefef !important;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin: 5px 0px;
+  cursor: pointer;
+}
+
+.title-inform{
+  color:dodgerblue;
+}
+
+.fromAlert{
+  margin: 5px;
+  width: 485px;
+  height: 300px;
+  border: 1px black solid;
+  background-color: gainsboro;
+}
+
+.inputCmt {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.btnCmt {
+  width: 100%;
+  background-color: rgb(250, 240, 230)
+}
+
+.cmt{
+  margin: 20px;
+  background-color: rgb(220, 220, 220);
+  border-radius: 5px;
+  padding-left: 10px
+}

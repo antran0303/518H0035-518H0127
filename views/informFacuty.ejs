@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Information</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" >
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" ></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+  
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="./images/TDT_logo.jpg" style="width: 140px; height: 70px; margin-left: 5px ; float: left; display: block;" class="responsive">
+  
+    
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <div class="mx-auto">
+        </div>
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            
+            <li class="nav-item">
+                <a href="dashboardStudent" class="fas fa-home fa-2x p-2 m-2 homeIcon"></a>
+            </li>
+            
+            
+            <li class="nav-item mr-3">
+                <img src="/images/facuty.jpg" class="rounded-circle m-2 avatar" alt="Cinque Terre style=">
+                <b><%= name %></b>
+                
+            </li>
+
+            
+            <li class="nav-item">
+                <a href='/login' class="fa fa-sign-out fa-2x p-2 m-2 iconLogout"></a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<div class="mt-5 pt-5">
+
+  <div class="container">
+    <div class="row mt-5">
+      
+      <div class="col-md-3"></div>
+      <div class="col-md-6"></div>
+      <div class="col-md-3">
+        <div class="d-flex mr-5">
+          <button class= "btn btn-success my-3"   data-toggle="modal" data-target="#ModalCenter">
+            Create new Inform
+          </button>
+
+
+          <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Create Post</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                        </div>
+
+                  <form class="fromAlert">
+
+                    <div>
+                      <h4 class="mt-4">Title</h4>
+                      <textarea id="titlePostNews" name="title" class="form-control type-post-content"></textarea>
+                    </div>
+  
+                    <div>
+                      <h4 class="mt-3">Content</h4>
+                      <textarea  id="ContentPostnews" name="content" class="form-control type-post-content"></textarea>
+                    </div>
+
+                  </form>
+
+                  <div class="modal-footer">
+                    <button id="btnPostNews" type="button" class="btn btn-secondary" data-dismiss="modal">Post</button>
+                  
+                  </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    
+
+       <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="list inform-color">
+          <span class= "title-inform">
+              NỘI DUNG CỐ VẤN HỌC TẬP SINH HOẠT CHỦ NHIỆM THÁNG 11/2020 (dành cho khóa tuyển sinh 2019 trở về trước)
+          </span>
+  
+          <div>
+            <small>
+              Phòng Công tác học sinh - sinh viên kính gửi các Anh/Chị Hướng dẫn giám sát phòng chống dịch COVID 19 tại TPHCM cập nhật 12h00 ngày 7/5/2021 (file đính kèm).
+            </small>
+          </div>
+  
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="">
+          <div>
+            <a href="/deleteInform/" class="">Delete</a>
+          </div>
+          <div>
+            <a href="" class="">Update</a>
+          </div>
+          
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
+
+
+
+</div>
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+</div>
+</div>
+</body>
+</html>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/javascript/status.js"></script>

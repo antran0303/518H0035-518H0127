@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="LogoGG" href="Images/Doge LOGO.png" />
+    <link rel="shortcut icon" href="Images/Doge LOGO.png">
+    <link rel="stylesheet" href="style.css" />
+
+    <title >REGISTER</title>
+</head>
+<body class="register-form">
+
+
+
+<div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+
+            </div>
+            <div class="col-lg-6">
+                <div id ="ui">
+                    <h1 >SIGN UP</h1>
+                    <form action="" class="form-group" method="post">
+
+                        <div class="form-group col-lg-12">
+                            
+                            <label for="nameFacuty">Name of facuty</label>
+                            <input value="" name="name"  class="form-control" type="text"  id="nameFacuty">
+                            
+                        </div>
+                        <div class="form-group col-lg-12" >
+                            
+                            <label for="email">Email</label>
+                            <input value="" name="email"  class="form-control"  id="email">
+                        </div>
+                        
+
+                        <div class="form-group col-lg-12" >
+                        
+
+                            <% if(typeof error !="undefined"&&error.length > 0){ %>
+
+                                <div class="alert alert-danger" role="alert">
+                                      <%= error %>
+                                </div>
+                
+                            <% } %>
+                            <% if(messages!=null&&messages.inform){ %>
+
+                                <div class="alert alert-danger" role="alert">
+                               
+                                      <%= messages.inform %>
+                                </div>
+                
+                            <% } %>
+
+                        </div>
+
+                        
+                        <div class="form-group col-lg-12" >
+                            <button type="submit" class="btn btn-success px-5 mt-3 mr-2">Create</button>
+                            
+                        </div>
+                        
+                        
+                        <div class="form-group col-lg-12" >
+                            <p>Already had an account? <a href="login">Sign in</a></p>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
